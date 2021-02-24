@@ -28,9 +28,7 @@ export const Review: React.FC<ReviewProps> = ({
             "
           </p>
         </div>
-        <p className="italic">
-          <p>{quote2}</p>
-        </p>
+        <p className="italic">{quote2}</p>
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <div>
