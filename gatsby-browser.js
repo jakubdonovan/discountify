@@ -1,7 +1,11 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
+import WebFont from "webfontloader"
+import "./src/styles/global.css"
 
-// You can delete this file if you're not using it
+WebFont.load({
+  google: {
+    families: ["Roboto", "Inter", "Leckerli One", "sans-serif"],
+  },
+  typekit: {
+    id: "pbb8vys",
+  },
+})
