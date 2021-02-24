@@ -1,10 +1,12 @@
 import Modal from "react-modal"
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { How } from "../components/how"
 import { Hero } from "../components/hero"
 import { ChatBox } from "../components/chatbox"
 import { OrderForm } from "../components/form"
 import { Reviews } from "../components/reviews"
+import { isMobile } from "react-device-detect"
+import tawkTo from "tawkto-react"
 
 export interface orderFormProps {
   url: string
@@ -16,6 +18,21 @@ export interface orderFormProps {
 }
 
 const IndexPage: React.FC = () => {
+  // Setup Livechat
+
+  const tawkToPropertyId = "60367744385de40757199e72"
+  const tawkToKey = "069830cf9c6bca6927c82edc9a224e5f19793d44"
+
+  useEffect(() => {
+    tawkTo(tawkToPropertyId, tawkToKey)
+
+    // if (!isMobile) {
+    //   t.onLoad = () => {
+    //     t.maximize()
+    //   }
+    // }
+  }, [])
+
   // Modal State
   const [open, setOpen] = useState<boolean>(false)
 

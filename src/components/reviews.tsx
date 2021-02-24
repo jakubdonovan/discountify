@@ -1,5 +1,4 @@
 import React from "react"
-import { FaFacebookF } from "react-icons/fa"
 import { Review } from "./review"
 
 interface ReviewsProps {}
