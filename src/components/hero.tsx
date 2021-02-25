@@ -25,7 +25,7 @@ export const Hero: React.FC<HeroProps> = ({ handleClick }) => {
     </>
   )
   return (
-    <div className="flex flex-col items-center justify-center px-4 -mx-4 md:mx-0 md:items-start md:px-0">
+    <div className="flex flex-col items-center justify-center px-8 md:mx-0 md:items-start md:px-0">
       <h2 className="hidden font-semibold tracking-wide text-orange-100 uppercase md:block font-inter 2xl:text-2xl">
         come hungry, leave happy.
       </h2>
