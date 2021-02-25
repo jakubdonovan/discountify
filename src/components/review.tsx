@@ -1,11 +1,12 @@
 import React from "react"
 import { FaFacebookF } from "react-icons/fa"
+import Img from "gatsby-image"
 
 type quote = string | HTMLSpanElement | any
 
 interface ReviewProps {
   name: string
-  image: string
+  image: any
   quote1: quote
   quote2?: quote
   location: string
@@ -37,9 +38,9 @@ export const Review: React.FC<ReviewProps> = ({
               </p>
               <p className="text-sm text-gray-500 font-inter">Happy Customer</p>
             </div>
-            <img
+            <Img
               className="w-12 h-12 mt-4 rounded-full shadow-md"
-              src={require(`../images/${image}.png`)}
+              fixed={image.childImageSharp.fixed}
               alt=""
             />
           </div>
