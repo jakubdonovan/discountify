@@ -52,7 +52,7 @@ const IndexPage: React.FC = () => {
         </nav>
 
         <div className="flex items-center justify-center row-span-6 py-8 bg-orange-400 md:rows-span-4 md:px-12 md:py-0 ">
-          <div className="grid px-4 m-auto mt-8 overflow-hidden md:px-8 gap-x-24 gap-y-8 md:grid-cols-2 max-w-7xl md:overflow-visible">
+          <div className="grid m-auto mt-8 md:px-8 gap-x-24 gap-y-8 md:grid-cols-2 max-w-7xl md:overflow-visible">
             <Hero handleClick={handleModal} />
             <How />
           </div>

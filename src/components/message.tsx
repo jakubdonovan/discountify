@@ -1,5 +1,5 @@
-import { checkPropTypes } from "prop-types"
 import React from "react"
+
 interface MessageProps {
   name: string
   text: string

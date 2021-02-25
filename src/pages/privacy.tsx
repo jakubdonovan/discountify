@@ -1,15 +1,26 @@
+import { Link } from "gatsby"
 import React from "react"
 import SEO from "../components/seo"
 interface PrivacyProps {}
 
 const Privacy: React.FC<PrivacyProps> = ({}) => {
   return (
-    <div>
+    <div className="relative p-8 overflow-hidden">
+      <nav className="absolute w-full p-4 -m-8 bg-orange-400">
+        <Link to="/" className="tracking-wider text-white font-logo">
+          discountify
+        </Link>
+      </nav>
       <SEO title="Privacy Policy" />
-      <section>
-        <div className="p-4 text-gray-900 font-inter" section-language="en">
-          <div id="md_en" data-target="out_en" className="agreement_md">
-            <h1 className="text-2xl font-bold font-proxima">Privacy Policy</h1>
+      <section className="mt-8">
+        <div
+          className="p-4 overflow-hidden text-gray-900 font-inter"
+          section-language="en"
+        >
+          <div className="flex flex-col space-y-4 overflow-hidden">
+            <h1 className="-mb-4 text-2xl font-bold font-proxima">
+              Privacy Policy
+            </h1>
             <p className="text-gray-500">
               Last updated: February {new Date().getDate()}
             </p>
@@ -24,7 +35,7 @@ const Privacy: React.FC<PrivacyProps> = ({}) => {
               using the Service, You agree to the collection and use of
               information in accordance with this Privacy Policy.
             </p>
-            <h1 className="text-2xl font-bold font-proxima">
+            <h1 className="my-4 text-2xl font-bold font-proxima">
               Interpretation and Definitions
             </h1>
             <h2>Interpretation</h2>

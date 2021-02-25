@@ -6,9 +6,9 @@ export const How: React.FC<HowProps> = ({}) => {
   return (
     <div
       style={{ borderRadius: "45px" }}
-      className="p-8 -mx-12 bg-white shadow-lg md:rounded-3xl"
+      className="p-8 bg-white shadow-lg md:-mx-12 lg:mx-0 md:px-8 md:rounded-3xl"
     >
-      <div className="flex flex-col items-center justify-center w-full">
+      <div className="flex flex-col items-center justify-center">
         <h2 className="mx-auto text-xl font-bold tracking-widest text-center uppercase md:text-left font-proxima md:text-base">
           how it works
         </h2>
