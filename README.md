@@ -15,7 +15,7 @@ discountify is an open-source SaaS. Originally developed for a bootcamp project.
 <br> </br>
 
 <p align="center">
-<img src="https://i.ibb.co/DLdBWkY/ezgif-com-gif-maker.webp">
+<img src="https://i.ibb.co/ZxSHcFH/discountify-page-capture.png">
 </p>
 
 <br></br>
