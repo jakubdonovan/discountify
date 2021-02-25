@@ -11,7 +11,13 @@ export const Hero: React.FC<HeroProps> = ({ handleClick }) => {
     <>
       {" "}
       Get all your{" "}
-      <span style={{ textDecorationColor: "" }} className="italic underline ">
+      <span
+        style={{
+          backgroundImage: "linear-gradient(180deg, #48BB78 0%, #68D391 100%)",
+          backgroundSize: "100% 7px",
+        }}
+        className="bg-bottom bg-no-repeat w-52"
+      >
         {" "}
         ubereats{" "}
       </span>{" "}
@@ -24,7 +30,7 @@ export const Hero: React.FC<HeroProps> = ({ handleClick }) => {
         come hungry, leave happy.
       </h2>
       <h1
-        style={{ lineHeight: `${isMobile ? "110%" : "115%"}` }}
+        style={{ lineHeight: "110%" }}
         className="mt-1 font-bold text-white md:max-w-lg text-mobile md:text-5xl font-proxima"
       >
         {text}
