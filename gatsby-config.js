@@ -1,8 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `discountify - 50 OFF uberEats`,
+    title: `50 OFF uberEats`,
+    titleTemplate: `%s - discountify`,
     description: `With discountify, you can get 50% off all uber eats orders.`,
     author: `discountify`,
+    twitterUsername: `@discountify`,
+    image: ``,
+    url: ``,
   },
   plugins: [
     `gatsby-plugin-postcss`,
