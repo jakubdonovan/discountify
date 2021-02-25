@@ -6,6 +6,7 @@ import { ChatBox } from "../components/chatbox"
 import { OrderForm } from "../components/form"
 import { Reviews } from "../components/reviews"
 import SEO from "../components/seo"
+import { Link } from "gatsby"
 
 export interface orderFormProps {
   url: string
@@ -77,12 +78,12 @@ const IndexPage: React.FC = () => {
 
       <div className="p-4 text-sm text-center text-gray-500 md:mt-12 md:whitespace-nowrap ">
         <div className="grid grid-cols-2 ">
-          <a className="hover:text-blue-500 hover:underline" href="/privacy">
+          <Link className="hover:text-blue-500 hover:underline" to="/privacy">
             Privacy Policy
-          </a>
-          <a className="hover:text-blue-500 hover:underline" href="/terms">
+          </Link>
+          <Link className="hover:text-blue-500 hover:underline" to="/terms">
             Terms and Conditions
-          </a>
+          </Link>
         </div>
 
         {/* <div className="flex items-center justify-center mt-4 italic text-gray-400">

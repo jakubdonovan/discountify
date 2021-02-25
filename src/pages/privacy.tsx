@@ -1,9 +1,11 @@
 import React from "react"
+import SEO from "../components/seo"
 interface PrivacyProps {}
 
 const Privacy: React.FC<PrivacyProps> = ({}) => {
   return (
     <div>
+      <SEO title="Privacy Policy" />
       <section>
         <div className="p-4 text-gray-900 font-inter" section-language="en">
           <div id="md_en" data-target="out_en" className="agreement_md">
