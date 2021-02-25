@@ -37,7 +37,7 @@ export const How: React.FC<HowProps> = ({}) => {
           img="success.svg"
           text="You receive your food at half the cost!"
           className="w-auto p-8 -m-8 font-bold shadow-lg bg-gray-50"
-          style={{ borderRadius: "0 0 45px 45px h-full" }}
+          style={{ borderRadius: "0 0 45px 45px" }}
         />
       </div>
     </div>
